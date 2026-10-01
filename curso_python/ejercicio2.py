@@ -1,0 +1,5 @@
+nombre = input("Nombre: ")
+apellido = input("Apellido: ")
+edad = input("Edad: ")
+email = input("Email: ")
+print("Mi nombre es",nombre,apellido,"tengo",edad,"años y mi dirección de mail es",email)
