@@ -11,3 +11,12 @@ alerta indicando que ese dato no es válido.
 Parte 2 (optativa)
 Además, como bonus, probá aplicar el método .capitalize() de Python, que sirve para
 poner en mayúscula la primera letra de una palabra y en minúscula el resto."""
+
+clientes = ["agostina adami", "josefina adami", "Florencia vercesi", "juana Molina", "clara Castelli", "José arguello", "Faustino vercesi", "martina DiMarsi","" ,"Fernando DeAngelis"]
+
+for i in range(len(clientes)):
+    
+    if clientes[i] == "":
+        print(f"Dato no válido para cliente {i+1}")
+        continue
+    print(f"Cliente {i + 1}: {clientes[i].title()}")    
