@@ -1,0 +1,47 @@
+# Sistema de Gestión de Inventario
+
+## ¿De qué trata el proyecto?
+
+Este proyecto es un sistema de gestión de inventario desarrollado en Python como trabajo final del curso.
+
+La idea es poder administrar los productos de un inventario de manera sencilla desde un menú en la terminal. Permite agregar, visualizar, buscar, modificar y eliminar productos.
+
+Para guardar la información utilicé una base de datos SQLite, de manera que los productos no se pierdan cuando se cierra el programa.
+
+## ¿Qué se puede hacer con el programa?
+
+El sistema cuenta con las siguientes opciones:
+
+- **Agregar productos:** ingresar el nombre, la categoría y el precio.
+- **Ver productos:** consultar todos los productos que están guardados.
+- **Buscar productos:** buscar un producto por su nombre.
+- **Eliminar productos:** seleccionar un producto y eliminarlo del inventario.
+- **Modificar productos:** cambiar los datos de un producto que ya está registrado.
+
+También incorporé algunas validaciones para evitar que se ingresen datos incorrectos, como campos vacíos, precios que no sean mayores que cero o números inválidos al seleccionar un producto.
+
+## Herramientas utilizadas
+
+- Python 3
+- SQLite
+- Colorama
+
+## Organización de los archivos
+
+El proyecto está dividido en carpetas y archivos para organizar mejor el código:
+
+```text
+entrega-final/
+│
+├── database/
+│   ├── __init__.py
+│   └── conexion.py
+│
+├── modules/
+│   ├── __init__.py
+│   ├── productos.py
+│   ├── validaciones.py
+│   └── vista.py
+│
+└── main.py
+
